@@ -11,12 +11,8 @@ logo:             images/logo.png
 menu:
   - title: 'Home'
     url: '/'
-  - title: 'About'
-    url: '/about'
   - title: 'Tags'
     url: '/tags'
-  - title: 'Categories'
-    url: '/categories'
 
 # Owner/author information
 owner:
