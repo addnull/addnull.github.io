@@ -173,6 +173,9 @@ DNS 정보 변경은 다소 시간이 걸리는데, 경험상 늦어도 24시간
 
 이제 꾸준히 blogging 하는 일만 남았다.
 
+<br/>
+<br/>
+<br/>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- blog_0000 -->
 <ins class="adsbygoogle"
