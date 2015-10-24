@@ -1,71 +1,86 @@
-# SITE CONFIGURATION
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+title:            ADDNULL
+description:      NULL
+disqus_shortname: addnull
+reading_time:     true
+words_per_minute: 200
+logo:             images/logo.png
+# Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
+# When testing locally leave blank or use http://localhost:4000
+# url: http://aronbordin.com/neo-hpstr-jekyll-theme
 
-# THEME-SPECIFIC CONFIGURATION
-theme:
-  # Meta
-  title: addnull
-  avatar: avatar.png
-  gravatar: # Email MD5 hash
-  description: "A website with blog posts and pages" # used by search engines
+menu:
+  - title: 'Home'
+    url: '/'
+  - title: 'About'
+    url: '/about'
+  - title: 'Tags'
+    url: '/tags'
+  - title: 'Categories'
+    url: '/categories'
 
-  # Header and footer text
-  header_text: >
-     <p>addnull</p>
-  header_text_feature_image:
-  footer_text: >
-   Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
-
-  # Icons
-  rss: false
-  email_address: "addnull@gmail.com"
-  behance:
-  bitbucket:
-  dribbble:
-  facebook:
-  flickr:
-  github:
-  google_plus:
-  instagram:
-  linkedin:  # Full URL
-  pinterest:
-  reddit:
-  soundcloud:
-  stack_exchange:  # Full URL
-  steam:
-  tumblr:
+# Owner/author information
+owner:
+  name:           Jongwon Han
+  site:           https://addnull.net
+  avatar:         images/avatar.jpg
+  bio:            "NULL"
+  email:          addnull@gmail.com
+  # Social networking links used in footer. Update and remove as you like.
   twitter:
-  wordpress:
-  youtube:
+  facebook: addnull
+  github: addnull
+  stackexchange:
+  linkedin: addnull
+  instagram:
+  flickr:
+  tumblr:
+  # google plus id, include the '+', eg +AronBordin
+  google_plus:
 
-  # Scripts
-  google_analytics: UA-68934831-1
-  disqus_shortname: addnull
-  katex: true # Enable if using math markup
+social:
+  - title: "github"
+    url: "https://github.com/addnull"
+  - title: "linkedin"
+    url: "https://kr.linkedin.com/in/addnull"
+# Background image to be tiled on all pages
+background:
 
-  # Localization strings
-  str_follow_on: "Follow on"
-  str_rss_follow: "Follow RSS feed"
-  str_email: "Email"
-  str_next: "Next"
-  str_prev: "Prev"
-  str_continue_reading: "Continue reading"
+# Analytics and webmaster tools stuff goes here
+google_analytics: UA-68934831-1
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
 
-  # Colours, typography and padding
-  # Open the "_sass > base" folder, and open "_variables.scss"
-  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
-  
-  # Post navigation
-  post_navigation: false
-
-# PAGINATION
-paginate: 5
-paginate_path: "blog/page:num"
-
-# BUILD SETTINGS
-markdown: kramdown
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Asia/Seoul
+future:      true
 highlighter: pygments
+markdown:    kramdown
+gems:
+  - jekyll-sitemap
 sass:
   sass_dir: _sass
-  style: :compressed
+  style: compressed
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
+
+# Amount of post to show on home page
+paginate: 5
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: true
+
+  coderay:
+    coderay_line_numbers: nil
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
