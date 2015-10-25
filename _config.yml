@@ -11,6 +11,8 @@ logo:             images/logo.png
 menu:
   - title: 'Home'
     url: '/'
+  - title: 'Posts'
+    url: '/posts'
   - title: 'Tags'
     url: '/tags'
 
@@ -54,6 +56,7 @@ highlighter: pygments
 markdown:    kramdown
 gems:
   - jekyll-sitemap
+  - jekyll-last-modified-at
 sass:
   sass_dir: _sass
   style: compressed

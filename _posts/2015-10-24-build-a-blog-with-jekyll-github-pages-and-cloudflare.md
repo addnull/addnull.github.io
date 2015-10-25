@@ -1,8 +1,11 @@
 ---
 layout: post
 title: Build a Blog with Jekyll, GitHub Pages and CloudFlare
+modified: 2015-10-25
 tags: [cloudflare, github pages, jekyll]
 ---
+/* Last modified at {{ page.modified | date: '%B %d, %Y' }} */
+
 # 시작
 
 Blogging을 시작하자.
@@ -166,6 +169,12 @@ CloudFlare의 name server 값은 사용자 계정마다 다를 수 있으므로 
 - igor.ns.cloudflare.com
 
 DNS 정보 변경은 다소 시간이 걸리는데, 경험상 늦어도 24시간 내에 반영된다.
+
+마지막으로 다시 CloudFlare에 접속해서 page rules 항목에 http로 접속했을 경우 https로 자동 forwarding하는 rule을 추가한다. (아래 screenshot 참고)
+
+<a href="/images/cloudflare-page-rule-addnull.net.png">
+    <img src="/images/cloudflare-page-rule-addnull.net.png" alt="">
+</a>
 
 # 마무리
 
