@@ -6,6 +6,16 @@ tags: [subdomain, dnsmasq]
 ---
 /* Last modified at {{ page.modified | date: '%B %d, %Y' }} */
 
+# 환경
+
+이 글의 내용은 아래와 같은 환경에서 확인된 내용이다.
+
+{% highlight bash %}
+OS      : Ubuntu 14.04.3
+         (http://cloud-images.ubuntu.com/vagrant/trusty/ 에서 20151021)
+DNSMasq : 2.68
+{% endhighlight %}
+
 # 시작
 
 최근에 OpenStack Swift로 AWS S3와 호환되는 object storage를 구축한 적이 있다.
