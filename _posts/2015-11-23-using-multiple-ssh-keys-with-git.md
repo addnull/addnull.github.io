@@ -140,3 +140,17 @@ use key:
 하지만, 한번 설정해두니, 필요할 때마다 추가, 수정해서 만족스럽게 쓰는 중이다.
 
 끝으로 궁금한 건, 'Git' 자체적으로 여러 'ssh key'를 사용할 수 있는 설정이 없다는게 좀 의아스럽다. (필요가 없거나, 아님 내가 못찾았거나.)
+
+<br/>
+<br/>
+<br/>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- blog_0000 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2574234961505557"
+     data-ad-slot="6369673644"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
