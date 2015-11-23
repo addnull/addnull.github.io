@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using Multiple SSH Keys with Git command
+title: Using Multiple SSH Keys with Git
 modified: 2015-11-24
 tags: [ssh, git]
 ---
