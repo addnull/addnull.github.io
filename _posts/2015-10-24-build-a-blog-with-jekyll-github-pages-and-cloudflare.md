@@ -1,20 +1,10 @@
 ---
 layout: post
 title: Build a Blog with Jekyll, GitHub Pages and CloudFlare
-modified: 2015-10-25
+modified: 2015-12-13
 tags: [cloudflare, github pages, jekyll]
 ---
 /* Last modified at {{ page.modified | date: '%B %d, %Y' }} */
-
-# 시작
-
-Blogging을 시작하자.
-
-거의 10년만에 다시 시작하는거라 어색하지만, 작고, 가볍게하자.
-
-내용은 객관적이고 기술적인 것들만 채울 생각이다.
-
-첫번째 글에서는 손풀기 겸으로 이 blog를 어떻게 만들었는지 정리한다.
 
 # 환경
 
@@ -71,6 +61,16 @@ test-unit (2.0.0.0)
 toml (0.1.2)
 yajl-ruby (1.2.1)
 {% endhighlight %}
+
+# 시작
+
+Blogging을 시작하자.
+
+거의 10년만에 다시 시작하는거라 어색하지만, 작고, 가볍게하자.
+
+내용은 객관적이고 기술적인 것들만 채울 생각이다.
+
+첫번째 글에서는 손풀기 겸으로 이 blog를 어떻게 만들었는지 정리한다.
 
 # 선택
 
