@@ -3,20 +3,13 @@ description:      NULL
 disqus_shortname: addnull
 reading_time:     true
 words_per_minute: 200
-logo:             images/logo.png
-
-menu:
-  - title: 'Home'
-    url: '/'
-  - title: 'Posts'
-    url: '/posts'
-  - title: 'Tags'
-    url: '/tags'
+# Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
+# When testing locally leave blank or use http://localhost:4000
+url:              https://addnull.net
 
 # Owner/author information
 owner:
   name:           Jongwon Han
-  site:           https://addnull.net
   avatar:         images/avatar.png
   bio:            "NULL"
   email:          addnull@gmail.com
@@ -29,14 +22,9 @@ owner:
   instagram:
   flickr:
   tumblr:
-  # google plus id, include the '+', eg +AronBordin
+  # google plus id, include the '+', eg +mmistakes
   google_plus:
 
-social:
-  - title: "github"
-    url: "https://github.com/addnull"
-  - title: "linkedin"
-    url: "https://kr.linkedin.com/in/addnull"
 # Background image to be tiled on all pages
 background:
 
@@ -48,12 +36,14 @@ bing_verify:
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Asia/Seoul
-future:      true
+future:      true  # publish future dated posts --  true, false (default) 
 highlighter: pygments
 markdown:    kramdown
 gems:
   - jekyll-sitemap
-  - jekyll-last-modified-at
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-feed
 sass:
   sass_dir: _sass
   style: compressed
@@ -65,18 +55,35 @@ permalink:   /:categories/:title/
 paginate: 5
 
 kramdown:
+  input: GFM
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  use_coderay: true
+  enable_coderay: false
 
-  coderay:
-    coderay_line_numbers: nil
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+include: 
+  - .htaccess
+exclude: 
+  - "*.less"
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - CHANGELOG
+  - Capfile
+  - Gemfile
+  - Gruntfile.js
+  - LICENSE
+  - README
+  - Rakefile
+  - config
+  - gulpfile.js
+  - lib
+  - log
+  - node_modules
+  - package.json
+  - spec
+  - tmp
