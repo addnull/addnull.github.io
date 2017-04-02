@@ -1,5 +1,5 @@
 title:            ADDNULL
-description:      NULL
+description:      Elastic DevOps Engineer
 disqus_shortname: addnull
 reading_time:     true
 words_per_minute: 200
@@ -10,8 +10,8 @@ url:              https://addnull.net
 # Owner/author information
 owner:
   name:           Jongwon Han
-  avatar:         images/avatar.png
-  bio:            "NULL"
+  avatar:         avatar.png
+  bio:            "Elastic DevOps Engineer"
   email:          addnull@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:
